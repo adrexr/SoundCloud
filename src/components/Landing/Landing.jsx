@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Hero from '../Hero/Hero';
 import Busqueda from '../Busqueda/Busqueda';
-import './Landing.css'
+import "./Landing.css";
 import Canciones from '../Canciones1/Canciones'
 import Cuadros from '../Cuadros/Cuadros'
 import LoginModal from '../Hero/LoginModal'; 
