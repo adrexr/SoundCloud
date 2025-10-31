@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import Hero from '../Hero/Hero';
-import Busqueda from '../Busqueda/Busqueda';
+import Hero from '../Hero/Hero.jsx';
+import Busqueda from '../Busqueda/Busqueda.jsx';
 import "./landing.css";
-import Canciones from '../Canciones1/canciones';
-import Cuadros from '../Cuadros/Cuadros';
-import LoginModal from '../Hero/LoginModal'; 
+import Canciones from '../Canciones1/Canciones.jsx';
+import Cuadros from '../Cuadros/Cuadros.jsx';
+import LoginModal from '../Hero/LoginModal.jsx'; 
 
 export default function LandingPage() {
     const [isModalOpen, setIsModalOpen] = useState(false);
