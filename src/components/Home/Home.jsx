@@ -92,7 +92,7 @@ export default function Home() {
                     title: song.trackName,
                     user: { name: song.artistName },
                     artwork: { '150x150': song.artworkUrl100 }, 
-                    previewUrl: song.previewUrl // Esta es la URL del audio de vista previa
+                    previewUrl: song.previewUrl 
                 }));
                 setSongs(formattedSongs);
             } else {

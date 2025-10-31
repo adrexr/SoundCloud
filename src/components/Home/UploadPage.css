@@ -87,6 +87,6 @@
     }
 
     .file-label {
-        padding: 80px 20px; /* Hacemos el área de drop más alta en móvil */
+        padding: 80px 20px;
     }
 }
