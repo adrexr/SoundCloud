@@ -37,9 +37,9 @@ export default function Canciones() {
                     <p className="auto">prod.6</p>
                 </div>
             </div>
-            <Link to="/" state={{ openModal: true }} className="explore-button-link">
+            <button  className="explore-button-link">
                 Explorar las listas de moda
-            </Link>
+            </button>
         </div>
     )
 }
