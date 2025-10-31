@@ -1,7 +1,8 @@
 .padre1{
     background-color: #121212;
    min-height: 100vh;
-   padding-bottom: 90px; /* Space for the player */
+   padding-bottom: 90px; 
+    font-family: Arial, sans-serif;
 }
 .barra{
     color: white;

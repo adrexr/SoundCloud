@@ -1,6 +1,7 @@
 .upload-modal {
     width: 500px;
     max-width: 90%;
+     font-family: Arial, sans-serif;
 }
 
 .upload-modal h2 {

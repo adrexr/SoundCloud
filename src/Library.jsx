@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaSoundcloud } from "react-icons/fa6";
 import { IoIosSearch, IoIosMail, IoMdNotificationsOutline } from "react-icons/io";
@@ -11,6 +11,7 @@ export default function Library() {
     const [showMessages, setShowMessages] = useState(false);
     const [showNotifications, setShowNotifications] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const menuRef = useRef(null);
 
     const viewContent = {
         Overview: <div><h2>Overview</h2><p>Aquí se mostrará un resumen de tu librería.</p></div>,
@@ -25,6 +26,19 @@ export default function Library() {
     const handleSignOut = async () => {
         navigate('/');
     };
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                setIsMenuOpen(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
 
     return (
         <div className="padre1">
