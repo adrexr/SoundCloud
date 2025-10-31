@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import Hero from '../Hero/Hero';
 import Busqueda from '../Busqueda/Busqueda';
 import "./landing.css";
-import Canciones from '../Canciones1/Canciones';
+import Canciones from '../Canciones1/canciones';
 import Cuadros from '../Cuadros/Cuadros';
 import LoginModal from '../Hero/LoginModal'; 
 
