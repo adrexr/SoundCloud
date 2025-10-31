@@ -35,7 +35,6 @@ const LoginModal = ({ onClose }) => {
           <button type="button" onClick={onClose} className="close-btn">&times;</button>
           <h1>Inicia sesión o crea una cuenta</h1>
           {error && <p className="error-message" style={{ color: 'red' }}>{error}</p>}<p>Al hacer clic en cualquiera de los botones “Continuar” a <br /> continuación, aceptas los Términos de Uso de SoundCloud <br /> y reconoces nuestra Política de privacidad.</p>
-          <button type="button" className='btn-facebook'><FaFacebook size={17} />Continuar con Facebook</button>
           <button type="button" onClick={async () => {
             const { data, error } = await supabase.auth.signInWithOAuth({
               provider: 'google',
@@ -45,7 +44,6 @@ const LoginModal = ({ onClose }) => {
             });
             if (error) console.error(error.message);
           }} className='btn-google'><FcGoogle size={17} />Continuar con Google</button>
-          <button type="button" className='btn-apple'><FaApple size={17} />Continuar con Apple</button>
           <p>O por correo electrónico</p>
           <input
             className='input-email'
