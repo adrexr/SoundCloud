@@ -1,0 +1,22 @@
+.busqueda{
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    display: flex;
+    color: white;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+}
+.in{
+    padding: 10px 250px;
+    background-color: #303030;
+    border: 0px solid;
+    border-radius: 5px;
+}
+.btn-pista{
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+}

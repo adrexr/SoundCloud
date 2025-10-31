@@ -1,0 +1,240 @@
+.welcome-container {
+  height: 450px; 
+  width: 90%;
+  position: relative;
+  color: white; 
+  font-family: Arial, sans-serif;
+  left: 5%;
+  top: 10px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out; 
+  overflow: hidden; 
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1; 
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative; 
+  z-index: 2; 
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  position: relative; 
+  z-index: 2; 
+  padding-left: 100px;
+}
+
+.hero-content h1 {
+  font-size: 4em;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  max-width: 400px;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 4; 
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.dot.active {
+  background-color: white;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login {
+  background-color: white;
+  color:black;
+}
+
+.signup {
+  background-color: black;
+  color: white;
+}
+
+
+.modal-backdrop {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.6); 
+    display: flex;
+    justify-content: center; 
+    z-index: 1000; 
+}
+
+.modal-content {
+    background-color:#121212;
+    padding: 30px;
+    width: 400px; 
+    border-radius: 3px;
+    flex-direction: column;
+   display: flex;
+   gap: 10px;
+   height: 500px;
+  
+}
+.close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #303030;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.btn-facebook{
+  background-color: #003BB3;
+  border: none;
+  color: white;
+  padding: 10px 20px; /* Reducimos el padding horizontal */
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+.btn-google{
+  background-color: #303030;
+  border: none;
+  color: white;
+  padding: 10px 20px; /* Reducimos el padding horizontal */
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
+
+}
+.btn-apple{
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 10px 20px; /* Reducimos el padding horizontal */
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+.input-email{
+  padding: 15px 20px; /* Reducimos el padding horizontal */
+  border: none;
+  border-radius: 5px;
+  background-color: #303030;
+  display: flex;
+  
+  
+}
+.btn-continue{
+  background-color: #A0A0A0;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  border-radius:5px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 410px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .hero-content {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .modal-content {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .btn-facebook, .btn-google, .btn-apple, .input-email, .btn-continue {
+        width: 100%; 
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

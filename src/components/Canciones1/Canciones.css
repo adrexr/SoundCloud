@@ -1,0 +1,28 @@
+.carta-canciones{
+    display: flex;
+    padding: 20px 100px;
+    gap: 70px;
+   
+}
+img{
+    width: 200px;
+    border-radius: 10px;
+}
+.auto{
+    color: gray;
+    bottom: 12px;
+    position: relative;
+    font-size: 15px;
+}
+.principal button{
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    
+}
+.principal{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}

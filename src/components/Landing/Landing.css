@@ -1,0 +1,24 @@
+.page{
+  background-color: #121212;
+  min-height: 100vh;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+body{
+  margin: 0%;
+}
+.letras{
+  text-align: center;
+  font-size: 25px;
+}
+
+@media (max-width: 410px) {
+  .page {
+    padding: 0 10px;
+  }
+
+  .letras {
+    font-size: 1.2em;
+    line-height: 1.4;
+  }
+}

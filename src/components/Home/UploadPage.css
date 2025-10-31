@@ -1,0 +1,91 @@
+.upload-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    color: white;
+}
+
+.upload-form-content {
+    background-color: #181818;
+    padding: 30px 40px;
+    border-radius: 4px; 
+    max-width: 100%;
+    border: 1px solid #282828;
+    min-height: 300px; 
+}
+
+.upload-form-content h2 {
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+.upload-form-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.upload-form-content input[type="text"] {
+    padding: 14px;
+    border-radius: 4px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: white;
+    font-size: 1em;
+}
+
+.file-label {
+    padding: 124px;
+    background-color: #333;
+    color: #ccc;
+    border: 2px dashed #555;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.file-label:hover {
+    background-color: #444;
+    border-color: #777;
+}
+
+.file-label input[type="file"] {
+    display: none;
+}
+
+.btn-upload {
+    padding: 15px;
+    background-color:white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-upload:hover {
+    background-color: #403b38;
+}
+
+.btn-upload:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+@media (max-width: 410px) {
+    .upload-form-content {
+        padding: 20px;
+        border: none;
+    }
+
+    .file-label {
+        padding: 80px 20px; /* Hacemos el área de drop más alta en móvil */
+    }
+}
